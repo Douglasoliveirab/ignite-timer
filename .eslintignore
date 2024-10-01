@@ -1,0 +1,15 @@
+.editorconfig
+.gitignore
+index.html
+jest.config.mjs
+package-lock.json
+package.json
+postcss.config.
+README.md
+tailwind.config.js
+tsconfig.json
+tsconfig.node.
+vite.config.ts
+/dist
+/public
+/node_modules
