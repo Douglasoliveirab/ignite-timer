@@ -52,7 +52,7 @@ export const Separator = styled.div`
   justify-content: center;
 `;
 
-export const StartCountDownButton = styled.button`
+export const BaseCountDownButton = styled.button`
   width: 100%;
   max-width: 650px;
   border: 0;
@@ -68,10 +68,6 @@ export const StartCountDownButton = styled.button`
   background: ${(props) => props.theme["green-500"]};
   color: ${(props) => props.theme["gray-100"]};
   cursor: pointer;
-
-  &:not(:disabled):hover {
-    background: ${(props) => props.theme["green-700"]};
-  }
 
   &:disabled {
     opacity: 0.7;
@@ -116,4 +112,18 @@ export const TaskInput = styled(BaseInput)`
 
 export const MinutesAmountInput = styled(BaseInput)`
   width: 4rem;
+`;
+
+export const StartCountDownButton = styled(BaseCountDownButton)`
+  &:not(:disabled):hover {
+    background: ${(props) => props.theme["green-700"]};
+  }
+  background: ${(props) => props.theme["green-500"]};
+`;
+
+export const StopCountDownButton = styled(BaseCountDownButton)`
+  &:not(:disabled):hover {
+    background: ${(props) => props.theme["red-700"]};
+  }
+  background: ${(props) => props.theme["red-500"]};
 `;

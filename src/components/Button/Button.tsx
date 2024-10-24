@@ -1,4 +1,4 @@
-import { ButtonProps } from '../../service/dto/button/Button.dto'
+import { ButtonProps } from '../../dtos/button/Button.dto'
 import { ButtonContainer } from './Button.style'
 
 export function Button({ variant = 'primary' }: ButtonProps) {

@@ -3,4 +3,5 @@ export interface newCycleProps {
   task: string;
   minuteAmount: number;
   startDate: Date;
+  interruptedDate?: Date;
 }
